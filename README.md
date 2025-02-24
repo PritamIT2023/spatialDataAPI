@@ -60,10 +60,25 @@ CREATE EXTENSION postgis;
 git clone https://github.com/PritamIT2023/spatialDataAPI.git
 ```
 
+2. Go to project directory
 
 ```bash
  cd spatialDataAPI
 ```
+
+ 3. Install dependencies 
+
+```bash
+ npm install
+```
+
+4. Start project
+
+```bash
+ npm start
+```
+
+
 
 ## Points API
 
