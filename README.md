@@ -39,8 +39,7 @@ Both APIs are built with Express.js and Sequelize ORM, using PostgreSQL with Pos
 1. Create PostgreSQL databases:
 
 ```sql
-CREATE DATABASE spatial_points_db;
-CREATE DATABASE spatial_polygons_db;
+CREATE DATABASE spatialDB;
 ```
 
 2. Enable PostGIS extension on each database:
@@ -55,43 +54,15 @@ CREATE EXTENSION postgis;
 
 ### Project Setup
 
-1. Clone the repository or create a new project:
+1. Clone the repository 
 
 ```bash
-mkdir spatial-api
-cd spatial-api
-npm init -y
+git clone https://github.com/PritamIT2023/spatialDataAPI.git
 ```
 
-2. Install dependencies:
 
 ```bash
-npm install express sequelize pg pg-hstore cors body-parser dotenv
-```
-
-3. Create environment configuration:
-
-Create a `.env` file with the following:
-
-```
-# Points API
-POINTS_API_PORT=3000
-POINTS_DATABASE_URL=postgres://postgres:password@localhost:5432/spatial_points_db
-
-# Polygons API
-POLYGONS_API_PORT=3001
-POLYGONS_DATABASE_URL=postgres://postgres:password@localhost:5432/spatial_polygons_db
-```
-
-4. Create the server files:
-   - Create `points-api.js` with the Points API code
-   - Create `polygons-api.js` with the Polygons API code
-
-5. Start the servers:
-
-```bash
-node points-api.js
-node polygons-api.js
+ cd spatialDataAPI
 ```
 
 ## Points API
